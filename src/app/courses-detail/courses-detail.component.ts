@@ -10,7 +10,9 @@ export class CoursesDetailComponent {
 
   course!: string;
 
-  constructor(private route: ActivatedRoute){
+  constructor(private route: ActivatedRoute){}
+
+  ngOnInit(){
     //this.route.params.subscribe(params => this.course = params['name']);
     this.route.params.subscribe(params => {
       this.course = params['name']
